@@ -112,14 +112,15 @@ FROM PopvsVac
 covid-sql-exploration/
 │
 ├── data/
-│   ├── raw/
-│   │   └── owid-covid-data.csv          -- Original dataset, untouched
-│   └── cleaned/
-│       ├── CovidDeaths.csv              -- Deaths and cases columns
-│       └── CovidVaccinations.csv        -- Vaccination columns
+│   ├── CSV/
+│   │   ├── CovidDeaths.csv
+│   │   ├── CovidVaccinations.csv 
+│   |── Excel/
+│   │   ├── CovidDeaths.csv
+│   │   ├── CovidVaccinations.csv
 │
-├── covid_data_exploration.sql           -- Main SQL script with all queries
-└── README.md                            -- Project documentation
+├── covid_data_exploration.sql
+└── README.md                           -- Project documentation
 ```
 
 ---

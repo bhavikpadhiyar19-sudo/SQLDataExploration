@@ -156,7 +156,7 @@ covid-sql-exploration/
 
 **Bhavik**
 B.E. Information Technology | Walchand Institute of Technology, Solapur
-[bhavikpadhiyar19@gmail.com] | [LinkedIn Profile](linkedin.com/in/bhavik-padhiyar-65328725a) | [GitHub Profile](https://github.com/bhavikpadhiyar19-sudo)
+[bhavikpadhiyar19@gmail.com] | [LinkedIn Profile]([linkedin.com/in/bhavik-padhiyar-65328725a](https://www.linkedin.com/in/bhavik-padhiyar-65328725a?utm_source=share_via&utm_content=profile&utm_medium=member_android)) | [GitHub Profile](https://github.com/bhavikpadhiyar19-sudo)
 
 ---
 

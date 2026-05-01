@@ -18,7 +18,7 @@ This project performs end-to-end exploratory data analysis (EDA) on global COVID
 
 | File | Description |
 |---|---|
-| `data/raw/owid-covid-data.csv` | Original dataset downloaded from Our World in Data, untouched |
+| `data/raw/Covid 19.csv` | Original dataset downloaded from Our World in Data, untouched |
 | `data/cleaned/CovidDeaths.csv` | Columns relevant to deaths and cases, extracted using Excel |
 | `data/cleaned/CovidVaccinations.csv` | Columns relevant to vaccinations, extracted using Excel |
 
@@ -119,7 +119,7 @@ covid-sql-exploration/
 │   │   ├── CovidDeaths.csv
 │   │   ├── CovidVaccinations.csv
 │
-├── covid_data_exploration.sql
+├── SQLQuery1.sql
 └── README.md                           -- Project documentation
 ```
 
@@ -127,11 +127,11 @@ covid-sql-exploration/
 
 ## How to Run
 
-1. Download `owid-covid-data.csv` from [Our World in Data GitHub](https://github.com/owid/covid-19-data/tree/master/public/data) or use the file provided in `data/raw/`
+1. Download `Covid 19.csv` from [Our World in Data GitHub](https://github.com/owid/covid-19-data/tree/master/public/data) or use the file provided in `data/raw/`
 2. Use the cleaned files in `data/cleaned/` directly, or re-split the raw file using Excel
 3. Import `CovidDeaths.csv` and `CovidVaccinations.csv` into SQL Server Management Studio (SSMS)
 4. Create a database named `SQLDataExploration`
-5. Open `covid_data_exploration.sql` and run queries section by section
+5. Open `Covid 19.sql` and run queries section by section
 
 ---
 
@@ -156,7 +156,7 @@ covid-sql-exploration/
 
 **Bhavik**
 B.E. Information Technology | Walchand Institute of Technology, Solapur
-[your-email@example.com] | [LinkedIn Profile] | [GitHub Profile]
+[bhavikpadhiyar19@gmail.com] | [LinkedIn Profile](www.linkedin.com/in/bhavik-padhiyar-65328725a) | [GitHub Profile](https://github.com/bhavikpadhiyar19-sudo)
 
 ---
 

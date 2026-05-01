@@ -12,9 +12,22 @@ This project performs end-to-end exploratory data analysis (EDA) on global COVID
 
 - **Source:** [Our World in Data – COVID-19 Deaths](https://ourworldindata.org/covid-deaths)
 - **Underlying data provider:** World Health Organization (WHO)
-- **Download link:** [GitHub – owid/covid-19-data](https://github.com/owid/covid-19-data/tree/master/public/data)
-- **Format:** CSV (split into CovidDeaths and CovidVaccinations tables for this project)
-- **Authors:** Edouard Mathieu, Hannah Ritchie, Lucas Rodés-Guirao et al. — Our World in Data
+- **Authors:** Edouard Mathieu, Hannah Ritchie, Lucas Rodés-Guirao et al.
+
+### Data Files
+
+| File | Description |
+|---|---|
+| `data/raw/owid-covid-data.csv` | Original dataset downloaded from Our World in Data, untouched |
+| `data/cleaned/CovidDeaths.csv` | Columns relevant to deaths and cases, extracted using Excel |
+| `data/cleaned/CovidVaccinations.csv` | Columns relevant to vaccinations, extracted using Excel |
+
+### Cleaning Steps
+
+- Downloaded the full CSV from Our World in Data
+- Opened in Excel and filtered relevant columns for deaths and vaccinations
+- Split into two separate CSV files — CovidDeaths and CovidVaccinations
+- Imported both into SQL Server as tables under the `SQLDataExploration` database
 
 ---
 
@@ -98,17 +111,24 @@ FROM PopvsVac
 ```
 covid-sql-exploration/
 │
-├── covid_data_exploration.sql   -- Main SQL script with all queries
-└── README.md                    -- Project documentation
+├── data/
+│   ├── raw/
+│   │   └── owid-covid-data.csv          -- Original dataset, untouched
+│   └── cleaned/
+│       ├── CovidDeaths.csv              -- Deaths and cases columns
+│       └── CovidVaccinations.csv        -- Vaccination columns
+│
+├── covid_data_exploration.sql           -- Main SQL script with all queries
+└── README.md                            -- Project documentation
 ```
 
 ---
 
 ## How to Run
 
-1. Download `owid-covid-data.csv` from [Our World in Data GitHub](https://github.com/owid/covid-19-data/tree/master/public/data)
-2. Split into two tables — `CovidDeaths` and `CovidVaccinations` — using Excel or Python
-3. Import both into SQL Server Management Studio (SSMS)
+1. Download `owid-covid-data.csv` from [Our World in Data GitHub](https://github.com/owid/covid-19-data/tree/master/public/data) or use the file provided in `data/raw/`
+2. Use the cleaned files in `data/cleaned/` directly, or re-split the raw file using Excel
+3. Import `CovidDeaths.csv` and `CovidVaccinations.csv` into SQL Server Management Studio (SSMS)
 4. Create a database named `SQLDataExploration`
 5. Open `covid_data_exploration.sql` and run queries section by section
 
